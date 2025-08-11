@@ -1,3 +1,2 @@
-gunicorn \
-    app.app:app \
-    -c gunicorn_conf.py
+#!/bin/sh
+gunicorn app.app:app -c app/gunicorn_conf.py
